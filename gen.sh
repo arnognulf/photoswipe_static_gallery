@@ -1,4 +1,19 @@
 #!/bin/bash
+
+if [ "x$1" == "x" ] 
+then
+cat <<HELP
+
+gen.sh <IMAGES>
+
+provide full path to a list of images to include in the gallery
+The gallery will be generated in the current directory.
+Upload this full directory to a web host.
+
+HELP
+exit 1
+fi
+
 {
 cat template-header.html
 rm -rf images
