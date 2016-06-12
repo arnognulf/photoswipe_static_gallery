@@ -3521,7 +3521,7 @@ var _historyUpdateTimeout,
 
 
 		if(_numAnimations || _isDragging) {
-			// changing browser URL forces layout/paint in some browsers, which causes noticable lag during animation
+			// changing browser URL forces layout/paint in some browsers, which causes noticeable lag during animation
 			// that's why we update hash only when no animations running
 			_hashAnimCheckTimeout = setTimeout(_updateHash, 500);
 			return;
